@@ -48,7 +48,7 @@ public readonly struct Result<T>
     public Result(T value, HttpStatusCode statusCode)
     {
         Value = value;
-        Errors = ImmutableArray<Error>.Empty;
+        Errors = [];
         HttpStatusCode = statusCode;
     }
 
